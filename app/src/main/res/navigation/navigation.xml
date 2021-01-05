@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragment_todo_list">
+    <fragment
+        android:id="@+id/fragment_todo_list"
+        android:name="com.cst.todotasks.ui.todos.TaskListFragment"
+        android:label="fragment_tasks"
+        tools:layout="@layout/fragment_task_list" >
+        <action
+            android:id="@+id/action_fragment_todo_list_to_todo_form"
+            app:destination="@id/fragment_todo_form" />
+        <action
+            android:id="@+id/action_fragment_todo_list_to_todo_detailed_view"
+            app:destination="@id/fragment_todo_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_todo_form"
+        android:name="com.cst.todotasks.ui.todo.TodoFormFragment"
+        android:label="fragment_todo_form"
+        tools:layout="@layout/todo_form" >
+        <action
+            android:id="@+id/action_todo_form_to_fragment_todo_list"
+            app:destination="@id/fragment_todo_list" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_todo_details"
+        android:name="com.cst.todotasks.ui.todo.TodoDetailsFragment"
+        android:label="fragment_task_details"
+        tools:layout="@layout/todo_detailed_view" >
+        <action
+            android:id="@+id/action_todo_detailed_view_to_fragment_todo_list"
+            app:destination="@id/fragment_todo_list" />
+        <action
+            android:id="@+id/action_todo_detailed_view_to_todo_form"
+            app:destination="@id/fragment_todo_form" />
+    </fragment>
+</navigation>
