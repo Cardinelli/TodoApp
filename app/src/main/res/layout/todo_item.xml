@@ -7,8 +7,8 @@
 
     <CheckBox
         android:id="@+id/todo_item_checkbox"
-        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_width="0dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="1" />
 
@@ -19,5 +19,5 @@
         android:layout_marginBottom="8dp"
         android:textColor="@android:color/black"
         android:textSize="18sp"
-        tools:text="What is Lorem Ipsum?" />
+        tools:text="Test Bla Bla" />
 </LinearLayout>

@@ -49,7 +49,7 @@ class TodoFormFragment : Fragment() {
             }
         })
 
-        view.findViewById<FloatingActionButton>(R.id.fabSaveTask).setOnClickListener {
+        view.findViewById<FloatingActionButton>(R.id.save_todo).setOnClickListener {
             if (todoTitle.text.isEmpty() || todoTitle.text.isBlank()) {
                 todoTitle.error = "Title is Required"
 
